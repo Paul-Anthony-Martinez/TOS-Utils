@@ -45,7 +45,12 @@ Example:
 hda=/home/anthonyslx/src/rep/templeos/vm/toshd.img
 ```
 
-Check `startTOS.sh` for an example script.
+Full command:
+```sh
+qemu-system-x86_64 -rtc base=localtime -enable-kvm -display sdl,gl=on -vga virtio -machine pcspk-audiodev=snd0 -audiodev pa,id=snd0 -m 1024 -smp $(nproc) -cdrom "./TempleOS.ISO" /home/anthonyslx/src/rep/templeos/vm/toshd.img
+```
+
+Check `startTOS.sh` for an example script. I recommend this way since you'll need this command everytime you want to start you virtual machine.
 
 # How to mount a QEMU virtual drive into Linux
 QEMU images can be mounted in your filesystem just like regular directories.
