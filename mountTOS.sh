@@ -1,7 +1,8 @@
 #!/bin/sh
-hdrive="toshd.img"
+# Where the image is going to be mounted
 mountPoint="/mnt/templeos"
-drivePath="/home/anthonyslx/src/rep/templeos/vm/$hdrive"
+# Where the image is located in your system
+drivePath="/home/anthonyslx/src/rep/templeos/vm/toshd.img"
 
 # Ensure the script is run as root
 if [ ! $(id -u) -eq 0 ]; then 
