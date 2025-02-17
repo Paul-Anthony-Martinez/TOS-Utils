@@ -11,7 +11,6 @@ F64 getHrs(F64 time)
 {  /* Divides system's time by 3600 for hours */
    return time/3600;
 }
-
  
 F64 getRemainder(F64 time)
 {  /* Allows calculating minutes and seconds */
