@@ -10,5 +10,5 @@ Shell scripts for TempleOS.
 QEMU images can be mounted in your filesystem so you
 can access them just like regular directories.
 
-Use the `mount` command with the path to the drive and the mount point as its arguments.
+Use the `mount` command with the path to the drive and the mount point as its arguments.  
 ```mount -o loop,offset=32256 $drivePath $mountPoint```
